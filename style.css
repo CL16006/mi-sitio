@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 sept. 2021, 17:52:14
+    Author     : fatycalderon
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+body{
+    background: linear-gradient(30deg, #0521ee, #1b1c1e);
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    height: auto;
+    max-width: 100%;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar h2{
+    color: #031d51;
+    background-color: #fff;
+    float: left;
+}
+
+.navbar h3{
+    color: #fff;
+    position: relative;
+    
+}
+
+/*
+.sub-menu-1{
+    display: none;
+}
+
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: aqua;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+*/
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content-2{
+    height: 100vh;
+    width: 100%;
+    border-style: none;
+    margin: 0px auto;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-left: 70px;
+}
+
+.content h2{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+
+.verMas{
+    transition: 0.5s;
+    
+}
+
+.foto{
+  margin: 20px;
+  border: 1px solid #ccc;
+  width: 180px;
+  border-radius: 100px;
+}
+
+
+.descripcion-1{
+    background-color: #020b1f;
+    color: #a6bbe5;
+    align-content: center;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    font-size: small;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.descripcion-2{
+    background-color: #1d3565;
+    color: #fff;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.descripcion-2 div{
+    float: left;
+    width: 50%;
+}
+
+.descripcion-2 div p{
+    padding: 5px;
+    margin: 20px;
+}
+
+.descripcion-2-1{
+    background-color: #07225f;
+}
+
+.descripcion-2-2{
+    background-color: #06266f;
+}
+
+footer{
+    width: 100%;
+    background-color: #031d51;
+    color: #a6bbe5;
+    height: 100px;
+    font-weight: 100;
+    line-height: 30px;
+   
+}
+
+.descripcion{
+    left: 0px;
+    right: 0px;
+    top: 20px;
+    color: darkseagreen;
+}
+
+.descripcion div{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+#parrafo{
+    height: 300px;
+    width: 100%;
+    border-style: none;
+    margin: 0px auto;
+    
+}
+
+#parrafo2{
+    height: 600px;
+    width: 100%;
+    border-style: none;
+    margin: 0px auto;
+    
+}
+
+#parrafo2 div{
+    float: left;
+    
+}
+
+
+#parrafo div{
+    float: left;
+    width: 50%;
+}
+
+#div-fondoWeb{
+    background-color: #7cceed;
+    height: 100%;
+    color: wheat;
+    width: 40%;
+}
+
+#div-fondoWeb:hover{
+    background-color: #123598;
+}
+
+.div-fondoWeb-h1{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.div-fondoWeb-p{
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#div-fondoWeb2{
+   background-color: #979fbb;
+   height: 100%;
+   color: wheat;
+   width: 60%;
+}
+
+#div-fondoWeb2:hover{
+    background-color: #021047;
+}
+
+#div-fondoWeb3{
+   background-color: #e49e7c;
+   height: 100%;
+   color: wheat;
+   width: 60%;
+}
+
+#div-fondoWeb3:hover{
+    background-color: #267d7e;
+}
+#div-fondoWeb4{
+   background-color: #f0ba9d;
+   height: 100%;
+   color: wheat;
+   width: 40%;
+}
+
+#div-fondoWeb4:hover{
+    background-color: #045449;
+}
+
+.linea {
+  border-top: 3px solid wheat;
+  height: 2px;
+  padding: 0;
+  margin-left: 100px;
+ 
+}
+
+#section{
+    height: 300px;
+    width: 100%;
+    border-style: none;
+    margin: 0px auto;
+}
+
+.iconos{
+    float: left;
+    margin: 5px;
+}
+
+.iconos img{
+    width: 50px;
+    height: 50px;
+}
+
+.iconos p{
+    float: bottom;
+
+}
+
+
+
+
+
